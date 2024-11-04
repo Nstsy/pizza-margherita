@@ -43,7 +43,6 @@ public class MenuPage {
         webDriverWait.until(ExpectedConditions.elementToBeClickable(By.xpath(MenuPageXpath.BUTTON_BASKET))).click();
         return this;
     }
-
     public String getMessagePizzaField() {
         return webDriverWait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(MenuPageXpath.PIZZA_FIELD))).getText();
     }
